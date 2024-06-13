@@ -1,4 +1,4 @@
-# Lip Verbaliser: Lip Reading Using Deep Learning
+# Lip Reading Using Deep Learning
 
 ## Overview
 
