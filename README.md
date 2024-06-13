@@ -8,14 +8,24 @@ Lip Verbaliser is a deep learning-based project aimed at converting lip movement
 
 To run the Lip Verbaliser project, several libraries are required. Here is a list of the dependencies along with a brief explanation of their use:
 
-```markdown
-- **OpenCV (`opencv-python`)**: Used for video processing tasks such as reading frames from video files and manipulating images.
-- **Matplotlib (`matplotlib`)**: Utilized for visualizing data, particularly for plotting and displaying images.
-- **Imageio (`imageio`)**: Facilitates reading and writing a wide range of image data, including animated sequences.
-- **gdown (`gdown`)**: A simple Python tool to download files from Google Drive.
-- **TensorFlow (`tensorflow`)**: The core library for developing and training the deep learning model.
-- **NumPy (`numpy`)**: Essential for numerical operations and handling arrays, which are extensively used in machine learning.
-```
+- **OpenCV** ([`opencv-python`](https://pypi.org/project/opencv-python/)): 
+  - Used for video processing tasks such as reading frames from video files and manipulating images.
+  
+- **Matplotlib** ([`matplotlib`](https://pypi.org/project/matplotlib/)): 
+  - Utilized for visualizing data, particularly for plotting and displaying images.
+  
+- **Imageio** ([`imageio`](https://pypi.org/project/imageio/)): 
+  - Facilitates reading and writing a wide range of image data, including animated sequences.
+  
+- **gdown** ([`gdown`](https://pypi.org/project/gdown/)): 
+  - A simple Python tool to download files from Google Drive.
+  
+- **TensorFlow** ([`tensorflow`](https://pypi.org/project/tensorflow/)): 
+  - The core library for developing and training the deep learning model.
+  
+- **NumPy** ([`numpy`](https://pypi.org/project/numpy/)): 
+  - Essential for numerical operations and handling arrays, which are extensively used in machine learning.
+
 To install the dependencies, run the following command:
 
 ```sh
