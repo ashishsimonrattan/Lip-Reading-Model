@@ -32,8 +32,8 @@ To install the dependencies, run the following command:
 pip install opencv-python matplotlib imageio gdown tensorflow
 ```
 ## Dataset
-- You can go here and download the video dataset: https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL
-- Extracted form the original GRID corpus dataset (http://spandh.dcs.shef.ac.uk/gridcorpus/)
+- You can go here and download the video dataset that I have used (It has just one speaker, 'coz eventually I grabbed data of meself and trained it on that as well..so) : https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL
+- Extracted form the original GRID corpus dataset which has around 34 speakers : http://spandh.dcs.shef.ac.uk/gridcorpus/
 
 ## Data Loading and Preprocessing
 
