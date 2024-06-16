@@ -31,6 +31,9 @@ To install the dependencies, run the following command:
 ```sh
 pip install opencv-python matplotlib imageio gdown tensorflow
 ```
+## Dataset
+- You can go here and download the video dataset: https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL
+- Extracted form the original GRID corpus dataset (http://spandh.dcs.shef.ac.uk/gridcorpus/)
 
 ## Data Loading and Preprocessing
 
@@ -110,6 +113,8 @@ model.add(Bidirectional(LSTM(128, kernel_initializer='Orthogonal', return_sequen
 model.add(Dropout(.5))
 model.add(Dense(char_to_num.vocabulary_size() + 1, kernel_initializer='he_normal', activation='softmax'))
 ```
+### Why Bidirectional LSTM?
+Bidirectional LSTMs are used because they can capture context from both past and future states, which is crucial in lip reading where understanding the sequence of movements over time is important. This ability to look at the data from both directions helps improve the accuracy of the predictions.
 
 ## Training the Model
 
@@ -152,6 +157,14 @@ sample = test_data.next()
 yhat = model.predict(sample[0])
 decoded = tf.keras.backend.ctc_decode(yhat, input_length=[75, 75], greedy=True)[0][0].numpy()
 ```
+## Input and Output
+### Input
+- The input to the model is a sequence of video frames capturing the lip movements of a speaker.
+- The video frames are preprocessed to grayscale and normalized.
+
+### Output
+- The output of the model is a sequence of text characters that represent the spoken words corresponding to the lip movements in the input video.
+- The output is decoded from the predicted character probabilities using the CTC decoding algorithm.
 
 ## Conclusion
 
