@@ -159,11 +159,11 @@ decoded = tf.keras.backend.ctc_decode(yhat, input_length=[75, 75], greedy=True)[
 ```
 ## Input and Output
 ### Input
-- The input to the model is a sequence of video frames capturing the lip movements of a speaker.
-- The video frames are preprocessed to grayscale and normalized.
+- **Video Files** : The primary input is a video file containing sequences of lip movements. Each video file is typically in .mpg format. The video frames are preprocessed to grayscale and normalized.
+- **Alignment Files** : These files provide the ground truth alignments of spoken words corresponding to the lip movements in the video files.
 
 ### Output
-- The output of the model is a sequence of text characters that represent the spoken words corresponding to the lip movements in the input video.
+- **Predicted Text** : The output is a textual representation of the spoken words, as inferred from the lip movements in the input video sequences.
 - The output is decoded from the predicted character probabilities using the CTC decoding algorithm.
 
 ## Conclusion
